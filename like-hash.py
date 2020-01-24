@@ -72,9 +72,9 @@ mail = 'likehash@yahoo.com'
 password = 'motdepasse00'
 
 bot = TwitterBot(mail,password)
-bot.login()
-hashtags = ['selenium','github','dev','botTwitter','bot']
+hashtags = ['github','developer','dev','botTwitter','bot','TwitterBot']
 for hashtag in hashtags:
+    bot.login()
     print("liking #"+hashtag+"...")
     bot.like_tweet(hashtag,30)
 bot.quit()
